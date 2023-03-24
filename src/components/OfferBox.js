@@ -1,12 +1,11 @@
-import Navbar from "@/components/Navbar";
 import styled from "@emotion/styled";
 import React from "react";
 
-const selected = () => {
+const OfferBox = () => {
   return (
     <>
       <Container>
-        <Navbar />
+        <div></div>
       </Container>
     </>
   );
@@ -14,4 +13,4 @@ const selected = () => {
 
 const Container = styled.div``;
 
-export default selected;
+export default OfferBox;
