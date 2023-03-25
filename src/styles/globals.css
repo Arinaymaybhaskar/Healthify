@@ -20,7 +20,7 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 0.2rem;
-  background-color: var(--scroller);
+  background-color: black;
 }
 
 html,
@@ -94,7 +94,7 @@ a {
   border-radius: 50%;
 }
 
-.profile-details{
+.profile-details {
   margin: 50px;
   padding: 50px;
   border: 1px solid #e1e1ff;
@@ -104,7 +104,7 @@ a {
   width: 400px;
 }
 
-.profile-line{
+.profile-line {
   width: 2px;
   height: 150px;
   background-color: #c1c1c1;
@@ -118,11 +118,11 @@ a {
   justify-content: space-between;
 }
 
-.profile-name{
+.profile-name {
   flex: 1;
 }
 
-.profile-age{
+.profile-age {
   flex: 1;
   text-align: right;
 }
@@ -135,5 +135,3 @@ a {
 .profile-contact {
   margin-bottom: 10px;
 }
-
-

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import Navbar from "@/components/Navbar";
 
 const signup = () => {
   const router = useRouter();
@@ -65,9 +64,7 @@ const signup = () => {
     <>
       <FormContainer>
         <form action="" onSubmit={(event) => handleSubmit(event)}>
-          <div className="brand">
-            <h1>HEALTHIFY</h1>
-          </div>
+          <div className="brand">HEALTHIFY</div>
           <input
             type="text"
             placeholder="Username"
@@ -107,66 +104,53 @@ const FormContainer = styled.div`
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  gap: 1rem;
   align-items: center;
-  background-color: #131324;
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    justify-content: center;
-    img {
-      height: 5rem;
-    }
-    h1 {
-      color: white;
-      text-transform: uppercase;
-    }
-  }
+  background-color: var(--bgcolor);
   form {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    background-color: #00000076;
-    border-radius: 2rem;
-    padding: 5rem;
-  }
-  input {
-    background-color: transparent;
-    padding: 1rem;
-    border: none;
-    border-bottom: 0.1rem solid #4e0eff;
-    color: white;
-    width: 100%;
-    font-size: 1rem;
-    &:focus {
-      border-bottom: 0.1rem solid #997af0;
-      outline: none;
+    background-color: var(--secondary);
+    border-radius: 0.5rem;
+    padding: 2rem 4rem;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    .brand {
+      font-size: 3rem;
+      text-align: center;
     }
-  }
-  button {
-    background-color: #4e0eff;
-    color: white;
-    padding: 1rem 2rem;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 0.4rem;
-    font-size: 1rem;
-    text-transform: uppercase;
-    &:hover {
-      background-color: #4e0eff;
+    input {
+      background-color: transparent;
+      padding: 1rem;
+      border: none;
+      border-bottom: 1px solid;
+      width: 100%;
+      font-size: 1rem;
+      &:focus {
+        border-bottom: 2px solid grey;
+        outline: none;
+      }
     }
-  }
-  span {
-    color: white;
-    text-transform: uppercase;
-    a {
-      color: #4e0eff;
-      text-decoration: none;
+    button {
+      background-color: var(--primary);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
       font-weight: bold;
+      cursor: pointer;
+      border-radius: 0.4rem;
+      font-size: 1rem;
+      text-transform: uppercase;
+      &:hover {
+        background-color: darkgray;
+      }
+    }
+    span {
+      text-transform: uppercase;
+      a {
+        text-decoration: none;
+        font-weight: bold;
+      }
     }
   }
 `;

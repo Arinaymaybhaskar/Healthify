@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
 import React from "react";
-import { FcOk } from "react-icons/fc";
+import { FcHighPriority, FcShare, FcPlus, FcInspection } from "react-icons/fc";
 
-const OfferBox = () => {
+const RequestBox = () => {
   return (
     <>
       <Container>
@@ -14,18 +14,30 @@ const OfferBox = () => {
             />
             <span className="name">Ankur Yadav</span>
           </div>
-          <span className="price">$200</span>
+          <span className="severe">
+            {true ? <FcInspection /> : <FcHighPriority />}
+          </span>
         </div>
         <div className="content">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quidem
-          consectetur magni soluta eveniet deserunt possimus aliquam molestias
-          sapiente alias corporis, quis nesciunt ipsa quisquam totam? Est natus
-          inventore vel.
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi
+            quidem consectetur magni soluta eveniet deserunt possimus aliquam
+            molestias sapiente alias corporis, quis nesciunt ipsa quisquam
+            totam? Est natus inventore vel.
+          </p>
+          <img
+            src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt=""
+          />
         </div>
         <div className="foot">
           <div className="btn">
-            <FcOk />
-            <span>Accept</span>
+            <FcPlus />
+            <span>Offer Consultation</span>
+          </div>
+          <div className="btn">
+            <FcShare />
+            <span>Share</span>
           </div>
         </div>
       </Container>
@@ -63,16 +75,28 @@ const Container = styled.div`
         padding-left: 0.5rem;
       }
     }
-    .price {
+    .severe {
       text-align: center;
       font-size: 2rem;
       padding: 0.25rem 1rem;
     }
   }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-bottom: 1px solid;
+    img {
+      width: 100%;
+      height: 15rem;
+    }
+  }
   .foot {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 0.5rem 2rem;
+    gap: 0.5rem;
     .btn {
       width: fit-content;
       font-size: 2rem;
@@ -91,4 +115,4 @@ const Container = styled.div`
   }
 `;
 
-export default OfferBox;
+export default RequestBox;

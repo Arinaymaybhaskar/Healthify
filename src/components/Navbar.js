@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
-import React, { useState, useEffect } from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
@@ -10,9 +11,15 @@ const Navbar = () => {
       <NavContainer>
         <div className="head">HEALTHIFY</div>
         <div className={isNavExpanded ? "list show" : "list hide"}>
-          <div className="link">Posts</div>
-          <div className="link">Profile</div>
-          <div className="link">Logout</div>
+          <Link href="/patient/post">
+            <div className="link">Posts</div>
+          </Link>
+          <Link href="/patient/profile">
+            <div className="link">Profile</div>
+          </Link>
+          <Link href="/">
+            <div className="link">Logout</div>
+          </Link>
         </div>
         <div
           className="icon"
