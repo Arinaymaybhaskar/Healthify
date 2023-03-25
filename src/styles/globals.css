@@ -1,25 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Cabin+Sketch:wght@400;700&family=Rubik:wght@300;400;500&display=swap");
 
 :root {
-  --bgcolor: rgb(247 248 250/1);
-  --primary: #1d5c96;
-  --secondary: #7db0de;
-  --third: #a94064;
-  --fourth: #12395d;
-  --scroller: #12395d;
-  --grey: rgba(0, 10, 32, 0.05);
-  --text: #000;
-  --inputText: #000;
-  --hover: #acbabf;
-  --box: rgb(255 255 255);
-  --blue: #339dff;
-  --lightBlue: #89cff0;
-  --midBlue: #29c5f6;
-  --darkBlue: #0000e7;
-  /* --whiteButton: #fff; */
-  /* --lightGreen: rgba(44,187,93,.12); */
-  --green: rgb(44 187 93/1);
-  /* --darkGreen:#0000E7; */
+  --bgcolor: #fff;
+  --primary: black;
+  --secondary: #f5f5f5;
+  --third: #2cbb5d;
 }
 
 * {
@@ -73,25 +58,10 @@ body {
 }
 
 .light-theme {
-  --bgcolor: rgb(247 248 250/1);
-  --primary: #1d5c96;
-  --secondary: #7db0de;
-  --third: #a94064;
-  --fourth: #12395d;
-  --scroller: #12395d;
-  --grey: rgba(0, 10, 32, 0.05);
-  --text: #000;
-  --inputText: #000;
-  --hover: #acbabf;
-  --box: rgb(255 255 255);
-  --blue: #339dff;
-  --lightBlue: #89cff0;
-  --midBlue: #29c5f6;
-  --darkBlue: #0000e7;
-  /* --whiteButton: #fff; */
-  /* --lightGreen: rgba(44,187,93,.12); */
-  --green: rgb(44 187 93/1);
-  /* --darkGreen:#0000E7; */
+  --bgcolor: #fff;
+  --primary: black;
+  --secondary: #f5f5f5;
+  --third: #2cbb5d;
 }
 
 a {
