@@ -68,3 +68,72 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+/* Patient profile page */
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  border: #000;
+  border-radius: 2px;
+  border-radius: 10%;
+  padding: 175px;
+  justify-content: space-between;
+}
+
+.profile-image {
+  margin: 50px;
+}
+
+.profile-image img {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.profile-details{
+  margin: 50px;
+  padding: 50px;
+  border: 1px solid #e1e1ff;
+  border-radius: 6%;
+  background-color: #e1e1ff;
+  color: steelblue;
+  width: 400px;
+}
+
+.profile-line{
+  width: 2px;
+  height: 150px;
+  background-color: #c1c1c1;
+}
+
+.profile-name-age {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.profile-name{
+  flex: 1;
+}
+
+.profile-age{
+  flex: 1;
+  text-align: right;
+}
+
+.profile-name-age h1 {
+  margin-right: 20px;
+}
+
+.profile-email,
+.profile-contact {
+  margin-bottom: 10px;
+}
+
+
