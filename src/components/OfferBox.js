@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import React from "react";
 import { FcOk } from "react-icons/fc";
+import Link from "next/link";
 
 const OfferBox = () => {
   return (
@@ -25,7 +26,8 @@ const OfferBox = () => {
         <div className="foot">
           <div className="btn">
             <FcOk />
-            <span>Accept</span>
+            <Link href="/patient/checkout"><span>Accept</span></Link>
+            
           </div>
         </div>
       </Container>
