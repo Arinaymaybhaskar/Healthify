@@ -36,3 +36,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+schema -
+patient - username, password,  DOB,  GENDER , Ph no, email, photo, 
+
+doctor- username , password, Qualification,
+doc rating , gender, phone No, email, photo, DOB ,
+
+patient post - content, cosnultation , pic , video, severity , TIme stamp, acceptation 
+
+doctor consulation - fees , time slot, Transaction ID
+
+Transaction - Username_ID , Time of Transaction, Amount , Transaction ID
+
+Qualification - description , ONLYFans , twitter, linkdIN, college name, degree (UG,PG) , experience.
