@@ -84,8 +84,11 @@ a {
 
 .profile-image {
   margin: 30px;
+  margin-top: 0px;
   padding: 40px;
   border-radius: 3%;
+  border-top-left-radius: 0px; 
+  border-top-right-radius: 0px;
   display: flex;
   background-color: #ffffff;
   flex-direction: column;
@@ -93,17 +96,33 @@ a {
   justify-content: center;
 }
 
+
+.profile-name{
+  padding-top: 20px;
+  background-color: #f8fafb;
+  padding-left: 20px;
+  color: #000;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px;
+  padding-bottom: 2px;
+  margin: 30px;
+  margin-bottom: 0px;
+}
+
+.profile-gender-age{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
 .image-container{
   position: relative;
   padding: 20px;
+  padding-top: 0px;
 }
 
 
-.delete-button{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 
 .profile-image img {
   border: 2px solid #ccc;
@@ -116,7 +135,7 @@ a {
 
 .Upload-photo-btn{
   font: inherit;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: 1em;
 	width: 100%;
 	font-weight: 500;
@@ -200,7 +219,7 @@ a {
 
 .Upload-detail-btn{
   font: inherit;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	padding: 1em;
 	width: 100%;
 	font-weight: 500;
@@ -209,4 +228,12 @@ a {
 	color: #FFF;
 	border: 0;
   margin: 20px;
+}
+
+.input-label-social {
+	color: #8b8b8b;
+	position: absolute;
+	top: 1.5rem;
+  font-size: 2rem;
+	transition: .25s ease;
 }
